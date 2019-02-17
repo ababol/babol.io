@@ -1,0 +1,13 @@
+.Icon {
+  align-self: center;
+  height: $px-base;
+  fill: $black;
+
+  &--small {
+    height: $px-base-s;
+  }
+
+  &--white {
+    color: $white;
+  }
+}

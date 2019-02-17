@@ -1,0 +1,16 @@
+.Nav {
+  display: flex;
+  height: $nav-height;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  a {
+    margin-left: auto;
+    box-shadow: white 0px 0px 40px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+}

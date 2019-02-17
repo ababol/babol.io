@@ -1,0 +1,25 @@
+.BlockBlogPosts {
+  $gutter: 20px;
+
+  &__list {
+    margin: 0 $gutter / -2;
+    margin-bottom: -10px;
+    display: flex;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      flex: 1;
+      margin: 0 $gutter / 2;
+      min-width: calc(33.3% - #{$gutter});
+
+      margin-bottom: 10px;
+
+      @include mobile {
+        min-width: calc(100% - #{$gutter});
+      }
+    }
+  }
+}
