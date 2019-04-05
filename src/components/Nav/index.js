@@ -7,6 +7,12 @@ export default () => (
       className="Text__link"
       target="_blank"
       remote="noopener"
+      onMouseEnter={() => {
+        document.title = `🚀 ${document.title}`;
+      }}
+      onMouseLeave={() => {
+        document.title = document.title.replace('🚀 ', '');
+      }}
     >
       Download CV
     </a>
