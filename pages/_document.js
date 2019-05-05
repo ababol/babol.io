@@ -1,22 +1,11 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
-import sprite from 'svg-sprite-loader/runtime/sprite.build';
 import HeadFavicon from '../src/components/HeadFavicon';
 import HeadMeta from '../src/components/HeadMeta';
 import Fonts from '../src/components/Fonts';
 import HeadAnalytics from '../src/components/HeadAnalytics';
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    const spriteContent = sprite.stringify();
-
-    return {
-      spriteContent,
-      ...initialProps,
-    };
-  }
-
   render() {
     return (
       <html lang="en">
@@ -32,7 +21,6 @@ export default class MyDocument extends Document {
           <HeadAnalytics />
         </Head>
         <body>
-          <div dangerouslySetInnerHTML={{ __html: this.props.spriteContent }} />
           <Main />
           <NextScript />
           <Fonts />

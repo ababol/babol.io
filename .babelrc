@@ -13,6 +13,15 @@
   ],
   "plugins": [
     "@babel/plugin-transform-runtime",
-    "@babel/plugin-proposal-class-properties"
+    "@babel/plugin-proposal-class-properties",
+    [
+      "inline-react-svg",
+      {
+        "svgo": {
+          "cleanupNumericValues": { "floatPrecision": 2 },
+          "removeTitle": true
+        }
+      }
+    ]
   ]
 }

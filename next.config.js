@@ -1,21 +1,15 @@
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 const withSass = require('@zeit/next-sass');
 const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
 const withOffline = require('next-offline');
 
 module.exports = withPlugins([
   [withOffline],
   [
-    optimizedImages,
-    {
-      svgo: {
-        cleanupNumericValues: { floatPrecision: 2 },
-        removeTitle: true,
-      },
-    },
+    withSass({
+      target: 'serverless',
+    }),
   ],
-  [withSass],
   [
     withBundleAnalyzer,
     {

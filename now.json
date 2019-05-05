@@ -1,12 +1,15 @@
 {
   "alias": ["babol.io", "www.babol.io", "babol.me", "www.babol.me"],
   "name": "babol.io",
-  "version": 1,
+  "version": 2,
   "env": {
     "NODE_ENV": "production"
   },
-  "engines": {
-    "node": "10"
-  },
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ],
   "public": false
 }
