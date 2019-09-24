@@ -7,27 +7,27 @@ export default ({ posts }) => (
     <ul className="BlockBlogPosts__list">
       {posts.map(
         ({
-          id,
-          title,
-          virtuals: {
-            previewImage: {
-              imageId: url,
-              originalWidth: width,
-              originalHeight: height,
+          itemType: {
+            post: {
+              clapCount,
+              id,
+              mediumUrl,
+              previewContent: { bodyModel: { paragraphs } },
             },
-            totalClapCount,
           },
-          content: { subtitle },
-          uniqueSlug,
         }) => (
           <BlogPost
             className="BlockBlogPosts__list-item"
             key={id}
-            title={title}
-            description={subtitle}
-            claps={totalClapCount}
-            slug={uniqueSlug}
-            cover={{ url, width, height }}
+            title={paragraphs[1].text}
+            description={paragraphs[2].text}
+            claps={clapCount}
+            mediumUrl={mediumUrl}
+            cover={{
+              url: paragraphs[0].metadata.id,
+              width: paragraphs[0].metadata.originalWidth,
+              height: paragraphs[0].metadata.originalHeight,
+            }}
           />
         ),
       )}

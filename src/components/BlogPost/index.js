@@ -2,13 +2,9 @@ import React from 'react';
 import cx from 'classnames';
 import Clap from '../../icons/clap.svg';
 
-export default ({ className, slug, title, description, claps, cover }) => (
+export default ({ className, mediumUrl, title, description, claps, cover }) => (
   <li className={cx('BlogPost', className)}>
-    <a
-      href={`https://medium.com/@ababol/${slug}`}
-      rel="noopener"
-      target="_blank"
-    >
+    <a href={mediumUrl} rel="noopener" target="_blank">
       <article>
         <figure itemProp="image" itemType="http://schema.org/ImageObject">
           <img
