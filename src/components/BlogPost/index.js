@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-import Clap from '../../icons/clap.svg';
+import Clap from '../../icons/Clap';
 
 export default ({ className, mediumUrl, title, description, claps, cover }) => (
   <li className={cx('BlogPost', className)}>

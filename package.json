@@ -5,40 +5,22 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
-    "now-build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "deploy": "now --target production"
+    "deploy": "vc --prod"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@zeit/next-bundle-analyzer": "^0.1.2",
-    "@zeit/next-sass": "^1.0.1",
     "classnames": "^2.2.6",
-    "express": "^4.16.4",
-    "isomorphic-fetch": "^2.2.1",
     "jump.js": "^1.0.2",
-    "next": "^8.1.0",
-    "next-compose-plugins": "^2.2.0",
-    "next-offline": "^3.3.8",
-    "node-sass": "^4.12.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "next": "^10.0.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.32.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "babel-plugin-inline-react-svg": "^1.1.0",
-    "eslint": "^5.10.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^22.1.2",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-react": "^7.11.1",
-    "prettier": "^1.15.3",
-    "prettier-eslint-cli": "^4.7.1"
+    "prettier": "^2.2.1"
   }
 }

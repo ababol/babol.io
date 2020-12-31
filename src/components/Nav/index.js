@@ -3,7 +3,7 @@ import React from 'react';
 export default () => (
   <nav className="Nav container">
     <a
-      href="/static/assets/arnaud_babol.pdf"
+      href="/assets/arnaud_babol.pdf"
       className="Text__link"
       target="_blank"
       remote="noopener"

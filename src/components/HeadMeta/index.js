@@ -12,11 +12,11 @@ export default () => (
     {/* Og Thumbnail */}
     <meta
       property="og:image"
-      content="https://babol.io/static/images/meta/thumbnail.png"
+      content="https://babol.io/images/meta/thumbnail.png"
     />
     <meta
       property="og:image:url"
-      content="https://babol.io/static/images/meta/thumbnail.png"
+      content="https://babol.io/images/meta/thumbnail.png"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -25,7 +25,7 @@ export default () => (
     <meta name="twitter:image:height" content="630" />
     <meta
       name="twitter:image"
-      content="https://babol.io/static/images/meta/thumbnail.png"
+      content="https://babol.io/images/meta/thumbnail.png"
     />
     <meta property="og:url" content="https://babol.io" />
     <meta name="twitter:title" content="Arnaud Babol - Product Lover" />
@@ -35,7 +35,7 @@ export default () => (
     />
     <meta
       name="twitter:image"
-      content="https://babol.io/static/images/meta/thumbnail.jpg"
+      content="https://babol.io/images/meta/thumbnail.jpg"
     />
     <meta name="twitter:card" content="summary_large_image" />
   </>

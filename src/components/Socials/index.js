@@ -1,8 +1,8 @@
 import React from 'react';
-import LinkedIn from '../../icons/linkedin.svg';
-import Twitter from '../../icons/twitter.svg';
-import Github from '../../icons/github.svg';
-import Medium from '../../icons/medium.svg';
+import LinkedIn from '../../icons/Linkedin';
+import Twitter from '../../icons/Twitter';
+import Github from '../../icons/Github';
+import Medium from '../../icons/Medium';
 
 const socialsList = [
   {
