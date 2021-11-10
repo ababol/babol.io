@@ -7,11 +7,7 @@ export default ({ className, mediumUrl, title, description, claps, cover }) => (
     <a href={mediumUrl} rel="noopener" target="_blank">
       <article>
         <figure itemProp="image" itemType="http://schema.org/ImageObject">
-          <img
-            src={`https://cdn-images-1.medium.com/max/800/${cover.url}`}
-            width={cover.width}
-            alt={title}
-          />
+          <img src={`${cover.url}`} width={cover.width} alt={title} />
         </figure>
         <header className="BlogPost__header BlogPost--content">
           <h2 className="BlogPost__title">{title}</h2>
