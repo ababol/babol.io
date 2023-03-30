@@ -11,7 +11,7 @@ export default ({ posts }) => (
           id,
           title,
           mediumUrl,
-          previewContent: { subtitle },
+          extendedPreviewContent: { subtitle },
           previewImage: { id: imageId },
         }) => (
           <BlogPost
@@ -22,7 +22,7 @@ export default ({ posts }) => (
             claps={clapCount}
             mediumUrl={mediumUrl}
             cover={{
-              url: `https://miro.medium.com/max/4720/${imageId}`,
+              url: `https://miro.medium.com/max/1080/${imageId}`,
               width: 680,
             }}
           />

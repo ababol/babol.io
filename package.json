@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "private": true,
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "deploy": "vc --prod"
+    "deploy": "vercel --prod"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +25,7 @@
     "sass": "^1.32.0"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "vercel": "^28.18.3"
   }
 }
