@@ -1,31 +1,32 @@
 {
   "name": "babol.io",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
   "engines": {
-    "node": "14.x"
+    "node": ">=20"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "deploy": "vercel --prod"
+    "start": "NODE_ENV=production next start"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.24.0",
-    "classnames": "^2.2.6",
-    "jump.js": "^1.0.2",
-    "next": "^10.0.4",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "sass": "^1.32.0"
+    "clsx": "^2.1.0",
+    "next": "^14.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "prettier": "^2.2.1",
-    "vercel": "^28.18.3"
+    "@types/node": "20.12.10",
+    "@types/react": "18.3.1",
+    "autoprefixer": "^10.4.17",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "typescript": "^5.4.2"
   }
 }

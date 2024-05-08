@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #445ae3;
+
+    --secondary: #9b9b9b;
+  }
+}
+
+.link {
+  color: var(--primary);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
