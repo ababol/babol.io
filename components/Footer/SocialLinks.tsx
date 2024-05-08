@@ -4,7 +4,6 @@ import { MediumIcon } from '@/icons/MediumIcon';
 import { TwitterIcon } from '@/icons/TwitterIcon';
 import { cn } from '@/utils/cn';
 import Link from 'next/link';
-import SocialLinksCss from './SocialLinks.module.css';
 
 const socialsList = [
   {
@@ -30,9 +29,9 @@ export const SocialLinks = () => (
     {socialsList.map(({ icon, href }) => (
       <Link
         className={cn(
-          SocialLinksCss['SocialLinks'],
           'flex h-[32px] w-[32px] items-center justify-center rounded-full border-[1px] border-solid border-black p-2 opacity-80',
-          'hover:bg-primary focus:bg-primary hover:border-primary focus:border-primary'
+          'transition-colors duration-200 ease-in-out',
+          'hover:bg-primary focus:bg-primary hover:border-primary focus:border-primary hover:fill-white focus:fill-white'
         )}
         href={href}
         target="_blank"

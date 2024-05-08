@@ -30,7 +30,6 @@ export const BlogPostItem = ({
           width={490}
           height={249}
           alt={title}
-          objectFit="cover"
           className="w-full"
           style={{ aspectRatio: '236 / 116' }}
           quality={90}
