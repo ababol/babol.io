@@ -7,7 +7,8 @@ import 'styles/main.css';
 
 const nunitoSans = Nunito_Sans({
   subsets: ['latin'],
-  weight: ['200', '400', '500']
+  weight: ['200', '400', '500'],
+  fallback: ['Helvetica', 'Arial', 'sans-serif']
 });
 
 const meta = {
