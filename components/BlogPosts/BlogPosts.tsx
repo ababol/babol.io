@@ -7,7 +7,7 @@ const POSTS = [
       'Getting people to be interested in your product is hard  so when they  are taking the plunge and finally downloading your app, you don’t…',
     coverUrl:
       'https://miro.medium.com/v2/resize:fit:1080/1*8mG66iiwNK0UCBnAu1BRuw.png',
-    clapCount: '1.91K',
+    clapCount: '1.8K',
     mediumUrl:
       'https://medium.com/shinefr/ux-case-study-shine-bank-80-conversion-onboarding-6b230e2c2b70'
   },
