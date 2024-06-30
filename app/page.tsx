@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <Link
         className="link sticky mt-5 flex justify-end"
-        href="https://babol.io/assets/arnaud_babol.pdf"
+        href="https://babol.io/assets/arnaud_babol_cv.pdf"
         target="_blank"
       >
         Download CV
